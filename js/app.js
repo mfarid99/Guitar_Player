@@ -6,7 +6,7 @@ sounds.forEach((sound) => {
 
   btn.innerText = sound
 
-  btn.addEventListener('mouseover', () => {
+  btn.addEventListener('click', () => {
     stopSongs()
 
     document.getElementById(sound).play()
