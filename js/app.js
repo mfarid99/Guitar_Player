@@ -1,11 +1,4 @@
-const sounds = [
-  'guitar1',
-  'guitar2',
-  'guitar3',
-  'guitar4',
-  'guitar5',
-  'guitar6',
-]
+const sounds = ['riff1', 'riff2', 'riff3', 'riff4', 'riff5', 'riff6']
 
 sounds.forEach((sound) => {
   const btn = document.createElement('button')
@@ -14,19 +7,19 @@ sounds.forEach((sound) => {
   btn.innerText = sound
 
   btn.addEventListener('mouseover', () => {
+    stopSongs()
+
     document.getElementById(sound).play()
   })
 
   document.getElementById('buttons').appendChild(btn)
 })
 
-const stopSongs = () => {
+function stopSongs() {
   sounds.forEach((sound) => {
-    const song = document.getElementById(sound).play()
+    const song = document.getElementById(sound)
 
     song.pause()
     song.currentTime = 0
   })
 }
-
-stopSongs()

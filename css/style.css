@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: aquamarine;
+  background: url('https://d4804za1f1gw.cloudfront.net/wp-content/uploads/sites/16/2017/04/29105917/iStock-476545960.jpg');
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -15,8 +15,16 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: rgba(255, 50, 58, 0.3);
+}
+
 .btn {
-  background-color: red;
+  background: url('https://image.freepik.com/free-photo/classical-wooden-guitar-strings-close-up_78636-109.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   border-radius: 5px;
   border: none;
   color: white;
@@ -27,7 +35,8 @@ body {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.5;
+  background-color: blue;
 }
 
 .btn:focus {
